@@ -10,6 +10,7 @@ var MainView = Backbone.View.extend({
 	},
 	render: function() {
 		$(this.el).html( _.template("<p>Hello <%= name %>, you are a <%= title %><br><button id='add-btn'>click me</button></p>")(this.model.toJSON()) );
+
 		return this;
 	}
 });

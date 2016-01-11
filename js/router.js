@@ -14,10 +14,10 @@ var App = Backbone.Router.extend({
 		//mainModel.attributes.title = "CTO";
 		setTimeout(function() {
 			mainModel.set("title","CTO");
+			mainView.render();
+			$("#wrapper-2").html(mainView.el);
 		},1000)
 
-		mainView.render();
-		$("#wrapper-2").html(mainView.el);
 	},
 	tasks: function() {
 		alert("tasks")
